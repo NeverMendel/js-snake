@@ -1,6 +1,6 @@
 function SnakeGraphic(canvasId, field, blockSize, offset) {
   this.canvas = document.getElementById(canvasId);
-  this.ctx = canvas.getContext('2d');
+  this.ctx = this.canvas.getContext('2d');
   this.field = field;
   this.blockSize = blockSize;
   this.offset = offset;
@@ -57,7 +57,6 @@ SnakeGraphic.prototype.setScore = function(score) {
   this.ctx.fillRect(0, 0, 200, 30);
   this.ctx.fillStyle = 'yellow';
   this.ctx.fillText(score, 10, 30);
-  this.oldScore = score;
 };
 
 /**
@@ -66,15 +65,13 @@ SnakeGraphic.prototype.setScore = function(score) {
  */
 SnakeGraphic.prototype.draw = function(snake) {
   //remove the old snake (fill the old snake with black)
-  this.ctx.fillStyle = 'black';
   for (var i = 0; i < this.oldSnake.length; i++) {
-    this.fillCell(this.oldSnake[i]);
+    this.fillCell(this.oldSnake[i], 'black');
   }
   //draw the new snake
   this.oldSnake = snake.slice();
-  this.ctx.fillStyle = 'white';
   for (var i = 0; i < snake.length; i++) {
-    this.fillCell(snake[i]);
+    this.fillCell(snake[i],'white');
   }
   //Draw the apple
   this.fillCell(this.apple, 'red');
