@@ -3,7 +3,6 @@ this.touchManager = new TouchManager();
 document.addEventListener(
   'touchstart',
   function(event) {
-    event.preventDefault();
     window.touchManager.handleTouchStart(event);
   },
   false

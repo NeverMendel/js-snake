@@ -1,0 +1,15 @@
+body {
+  overscroll-behavior: none;
+  background: black;
+  text-align: center;
+}
+
+#game{
+  height: 100%;
+}
+
+@media only screen and (orientation: portrait) {
+  #game{
+    width: 100%;
+  }
+}

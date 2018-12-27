@@ -11,10 +11,6 @@ function SnakeGraphic(canvasId, field, blockSize, offset) {
 SnakeGraphic.prototype.init = function() {
   this.canvas.width = this.field.x * this.blockSize.x + this.offset;
   this.canvas.height = this.field.y * this.blockSize.y + this.offset;
-  this.canvas.style.width =
-    this.field.x * this.blockSize.x + this.offset + 'px';
-  this.canvas.style.height =
-    this.field.y * this.blockSize.y + this.offset + 'px';
 };
 
 /**
