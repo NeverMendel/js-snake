@@ -1,13 +1,12 @@
-# js-snake
+# snake.js
 
 ## Description
 
-Basic snake game made with vanilla javascript.
-I made this project a while ago.
+Snake game made with pure JavaScript, no libraries or frameworks used.
 
 ## Where I can play it?
 
-You can play this game [here](https://nevermendel.github.io/js-snake/). Feel free to contribute.
+You can play this game [here](https://nevermendel.github.io/snake.js/). Feel free to contribute.
 
 ## How to play?
 
@@ -17,4 +16,4 @@ On mobile swipe in the direction you want the snake to move.
 
 ## License
 
-[MIT](./LICENSE.md)
+[MIT License](./LICENSE.md)
